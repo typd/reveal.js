@@ -15,7 +15,7 @@ body {
   background-color: #fff; }
 
 .reveal {
-  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', Helvetica, sans-serif, "Microsoft YaHei", "微软雅黑";
   font-size: 38px;
   font-weight: normal;
   color: #222; }
@@ -44,13 +44,13 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 2.5em; }
+  font-size: 2.4em; }
 
 .reveal h2 {
-  font-size: 1.6em; }
+  font-size: 1.8em; }
 
 .reveal h3 {
-  font-size: 1.3em; }
+  font-size: 1.4em; }
 
 .reveal h4 {
   font-size: 1em; }
@@ -67,8 +67,8 @@ body {
 
 /* Ensure certain elements are never larger than the slide itself */
 .reveal img, .reveal video, .reveal iframe {
-  max-width: 95%;
-  max-height: 95%; }
+  max-width: 100%;
+  max-height: 100%; }
 
 .reveal strong, .reveal b {
   font-weight: bold; }
@@ -85,13 +85,26 @@ body {
   list-style-type: decimal; }
 
 .reveal ul {
-  list-style-type: disc; }
+  list-style-type: none;
+}
+
+.reveal ul li{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.reveal ul li:last-child {
+  margin-bottom: 20px;
+}
+
 
 .reveal ul ul {
-  list-style-type: square; }
+  font-size: 80%;
+  //list-style-type: square;
+}
 
 .reveal ul ul ul {
-  list-style-type: circle; }
+  //list-style-type: circle;
+}
 
 .reveal ul ul, .reveal ul ol, .reveal ol ol, .reveal ol ul {
   display: block;
